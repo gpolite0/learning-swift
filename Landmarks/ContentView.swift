@@ -9,21 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("huge words")
-            .font(.largeTitle)
-            .foregroundColor(.green)
-        
-        Text("big words")
-            .font(.title)
-            .foregroundColor(.green)
-        
-        Text("medium words")
-            .font(.title2)
-            .foregroundColor(.green)
-        
-        Text("small words")
-            .font(.title3)
-            .foregroundColor(.green)
+        // stacks basically as CSS divs
+        VStack(alignment: .leading) {
+            Text("Turtle Rock")
+                .font(.title)
+            HStack {
+                Text("Joshua Tree")
+                    .font(.subheadline)
+                Spacer()  // to use the full screen width
+                Text("California")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
     }
 }
 
