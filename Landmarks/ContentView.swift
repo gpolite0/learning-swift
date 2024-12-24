@@ -9,7 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("testing changing the text")
+        Text("huge words")
+            .font(.largeTitle)
+            .foregroundColor(.green)
+        
+        Text("big words")
+            .font(.title)
+            .foregroundColor(.green)
+        
+        Text("medium words")
+            .font(.title2)
+            .foregroundColor(.green)
+        
+        Text("small words")
+            .font(.title3)
+            .foregroundColor(.green)
     }
 }
 
